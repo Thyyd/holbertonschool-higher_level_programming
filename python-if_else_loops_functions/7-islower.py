@@ -3,5 +3,5 @@ def islower(c):
     if ord('a') <= ord(c) and ord(c) <= ord('z'):
         retour = True
     else:
-        retour = False    
+        retour = False
     return retour
