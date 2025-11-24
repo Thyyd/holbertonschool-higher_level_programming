@@ -4,8 +4,8 @@
 
 
 class Square:
-    """Classe qui definit un carre.
-    Definition d'un attribut prive size (Ajout V.0.2)"""
+    """Classe qui definit un carre.  Definition d'un attribut
+    prive size et verifie que size soit un entier positif (Ajout V.0.2)"""
     def __init__(self, size = 0):
         try:
             size = int(size)
