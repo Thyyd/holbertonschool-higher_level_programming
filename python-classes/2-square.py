@@ -6,7 +6,7 @@
 class Square:
     """Classe qui definit un carre. Definition d'un attribut prive
     size et verifie que size soit un entier positif (Ajout V.0.2)"""
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         try:
             if type(size) is not int:
                 raise TypeError("size must be an integer")
