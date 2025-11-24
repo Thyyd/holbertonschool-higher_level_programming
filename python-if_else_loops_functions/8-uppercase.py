@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-def uppercase(strg):
+def uppercase(str):
     renv = ""
-    for car in range(len(strg)):
-	if ord('a') <= ord(strg[car]) <= ord('z'):
-	    att = ord(strg[car]) - 32
+    for car in range(len(str)):
+	if ord('a') <= ord(str[car]) <= ord('z'):
+	    att = ord(str[car]) - 32
 	    renv += chr(att)
 	else:
-	    renv += strg[car]
+	    renv += str[car]
     print(renv)
