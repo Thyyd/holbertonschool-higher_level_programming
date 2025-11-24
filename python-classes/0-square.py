@@ -1,7 +1,12 @@
 #!/usr/bin/python3
 
 """
-Classe Square qui definit un carre
+Module contenant la classe Square
 """
-Class Square:
+
+class Square:
+"""
+Classe qui definit un carre. 
+Est actuellement vide, car il s'agit de la V.0
+"""
     pass
