@@ -7,4 +7,4 @@ def uppercase(strg):
 	    renv += chr(att)
 	else:
 	    renv += strg[car]
-    return renv
+    print(renv)
