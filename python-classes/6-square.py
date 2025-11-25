@@ -92,5 +92,5 @@ class Square:
 
             for x in range(self.__size):
                 print("#", end="")
-                if l == self.__size - 1:
+                if x == self.__size - 1:
                     print("")
