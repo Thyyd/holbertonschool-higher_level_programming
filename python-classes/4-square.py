@@ -8,7 +8,7 @@ class Square:
     size et verifie que size soit un entier positif (Ajout v.0.2).
     Ajout d'une methode renvoyant l'aire du carre (Ajout v.0.3).
     Ajout d'un getter et d'un setter a l'attribut size (Ajout v.0.4)."""
-    def __init__(self, size=0): 
+    def __init__(self, size=0):
         try:
             if type(size) is not int:
                 raise TypeError("size must be an integer")
@@ -36,6 +36,6 @@ class Square:
             raise e
 
         self.__size = value
-    
+
     def area(self):
         return self.__size*self.__size
