@@ -36,5 +36,7 @@ TypeError: a must be an integer
 >>> add_integer(-48)
 50
 
->>> add_integer(1e9, 1)
-1000000001
+>>> add_integer(1e500, 1)
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
