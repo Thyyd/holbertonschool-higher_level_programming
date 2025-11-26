@@ -35,3 +35,6 @@ TypeError: a must be an integer
 
 >>> add_integer(-48)
 50
+
+>>> add_integer(1e275, -1e274)
+1e275
