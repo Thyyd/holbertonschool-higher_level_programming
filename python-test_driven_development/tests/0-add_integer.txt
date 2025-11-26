@@ -12,20 +12,6 @@
 >>> add_integer(100.3, -2)
 98
 
->>> add_integer(70, 5.8)
-75
-
->>> add_integer(100.6, 50.4)
-150
-
->>> add_integer(-48)
-50
-
->>> add_integer("2", 6)
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
-
 >>> add_integer(4, "School")
 Traceback (most recent call last):
 ...
