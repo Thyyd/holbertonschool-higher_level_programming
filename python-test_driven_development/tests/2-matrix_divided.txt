@@ -52,7 +52,6 @@ Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 matrix_divided(M10, 10)
->>> add_integer(1e500, 1)
 Traceback (most recent call last):
 ...
 OverflowError: cannot convert float infinity to integer

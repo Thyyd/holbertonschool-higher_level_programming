@@ -34,6 +34,19 @@ def matrix_divided(matrix, div):
     if not isinstance(matrix, list):
         raise TypeError(
             "matrix must be a matrix (list of lists) of integers/floats")
+    # Si matrix est une liste simple qui ne contient que des int/float,
+    # alors il faut la transformer en liste de liste : [1, 2] -> [[1, 2]]
+    is_list = True
+    for elem in matrix:  # On parcourt les elements de matrix
+        if not isinstance(elem, (int, float)):
+            is_list = False
+            break
+            # Si elem n'est pas un chiffre, ce n'est pas une liste simple.
+
+    # Transformation liste simple en liste de liste
+    if is_list:
+        matrix = [matrix]
+
     # On verifie ensuite que chaque element de matrix est une liste
     for row in matrix:  # row est une liste de matrix
         if not isinstance(row, list):
