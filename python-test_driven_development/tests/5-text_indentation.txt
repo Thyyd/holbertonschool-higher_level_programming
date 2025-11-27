@@ -3,13 +3,7 @@
 >>> text_indentation("Bon. text ?ok:Il faut tout casser")
 Bon.
 
-text ?
-
-ok:
-
-Il faut tout casser
-
->>> text_indentation("None")
+>>> text_indentation(None)
 Traceback (most recent call last):
 ...
 TypeError: text must be a string
@@ -33,21 +27,8 @@ Je suis Albaz le Dechu
 >>> text_indentation("Salut.")
 Salut.
 
-
 >>> text_indentation(". Salut ?")
 .
 
-Salut ?
-
-
 >>> text_indentation("COMMENT CA ?? Tu vas soufrir...")
 COMMENT CA ?
-
-?
-
-Tu vas soufrir.
-
-.
-
-.
-
