@@ -28,4 +28,3 @@ def say_my_name(first_name, last_name=""):
 
     phrase = "My name is {} {}".format(first_name, last_name)
     print(phrase)
-    return phrase
