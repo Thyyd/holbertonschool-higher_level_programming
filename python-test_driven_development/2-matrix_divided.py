@@ -34,6 +34,21 @@ def matrix_divided(matrix, div):
     if not isinstance(matrix, list):
         raise TypeError(
             "matrix must be a matrix (list of lists) of integers/floats")
+    # Si matrix est une liste simple qui ne contient que des int/float,
+    # alors il faut la transformer en liste de liste : [1, 2] -> [[1, 2]]
+    was_list = False
+    is_list = True
+    for elem in matrix:  # On parcourt les elements de matrix
+        if not isinstance(elem, (int, float)):
+            is_list = False
+            break
+            # Si elem n'est pas un chiffre, ce n'est pas une liste simple.
+
+    # Transformation liste simple en liste de liste
+    if is_list:
+        matrix = [matrix]
+        was_list = True
+
     # On verifie ensuite que chaque element de matrix est une liste
     for row in matrix:  # row est une liste de matrix
         if not isinstance(row, list):
@@ -46,7 +61,7 @@ def matrix_divided(matrix, div):
             if not isinstance(val, (int, float)):
                 raise TypeError(
                     "matrix must be a matrix (list of lists) of"
-                    "integers/floats")
+                    " integers/floats")
 
     list_size = len(matrix[0])  # Variable contenant la taille de la ligne 0
     # Verification que toutes les lignes de matrix font la meme taille
@@ -69,5 +84,9 @@ def matrix_divided(matrix, div):
         for x in r:
             line.append(round(x / div, 2))
         mat2.append(line)
+
+    # Si la matrice initiale etait de dimension 1, on retourne une simple liste
+    if was_list:
+        mat2 = mat2[0]
 
     return mat2

@@ -1,0 +1,40 @@
+say_my_name = __import__('3-say_my_name').say_my_name
+
+>>> say_my_name("Ciel", "Hakuyoku")
+"My name is Ciel Hakuyoku"
+
+>>> say_my_name("Albaz")
+"My name is Albaz "
+
+>>> say_my_name(None)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+>>> say_my_name(92)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+>>> say_my_name("Jojo", 35)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+>>> say_my_name("Soulburner", None)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+>>> say_my_name("")
+"My name is  "
+
+>>> say_my_name(["Jin"])
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+>>> say_my_name("Mirai", ("Saikyo",))
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
