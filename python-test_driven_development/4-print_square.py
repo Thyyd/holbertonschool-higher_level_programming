@@ -24,7 +24,7 @@ def print_square(size):
         raise ValueError("size must be >= 0")
 
     if size == 0:
-        print("")
+        return
     for row in range(size):
         for line in range(size):
             print("#", end="")
