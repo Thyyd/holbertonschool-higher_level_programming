@@ -28,7 +28,7 @@ def text_indentation(text):
             print(a_afficher)
             print("")
             a_afficher = ""
-    print(a_afficher)
+    print(a_afficher, end="")
 
 
 # text_indentation("Bonjour. Arrive-t-on ? bientot")
