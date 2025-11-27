@@ -15,11 +15,11 @@ class TestMaxInteger(unittest.TestCase):
     """
     def test_values(self):
         # Etre sur que les ValueError sont relevées quand necessaire
-        self.assertRaises(ValueError, max_integer, ["a", 50])
         self.assertRaises(ValueError, max_integer, [True])
 
     def test_type(self):
         # Etre sur que les TypeError sont relevées quand necessaire
+        self.assertRaises(TypeError, max_integer, ["a", 50])
         self.assertRaises(TypeError, max_integer, None)
         self.assertRaises(TypeError, max_integer, 92)
         self.assertRaises(TypeError, max_integer, (32, 85, 120))
