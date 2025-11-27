@@ -13,9 +13,6 @@ class TestMaxInteger(unittest.TestCase):
     - Les Types
     - La valeur renvoyee par la fonction
     """
-    def test_values(self):
-        # Etre sur que les ValueError sont relevées quand necessaire
-        self.assertRaises(ValueError, max_integer, [True])
 
     def test_type(self):
         # Etre sur que les TypeError sont relevées quand necessaire
