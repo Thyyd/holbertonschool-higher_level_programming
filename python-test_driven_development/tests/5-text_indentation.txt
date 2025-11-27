@@ -2,6 +2,12 @@
 
 >>> text_indentation("Bon. text ?ok:Il faut tout casser")
 Bon.
+<BLANKLINE>
+text ?
+<BLANKLINE>
+ok:
+<BLANKLINE>
+Il faut tout casser
 
 >>> text_indentation(None)
 Traceback (most recent call last):
@@ -26,9 +32,22 @@ Je suis Albaz le Dechu
 
 >>> text_indentation("Salut.")
 Salut.
+<BLANKLINE>
 
 >>> text_indentation(". Salut ?")
 .
+<BLANKLINE>
+Salut ?
+<BLANKLINE>
 
 >>> text_indentation("COMMENT CA ?? Tu vas soufrir...")
 COMMENT CA ?
+<BLANKLINE>
+?
+<BLANKLINE>
+Tu vas soufrir.
+<BLANKLINE>
+.
+<BLANKLINE>
+.
+<BLANKLINE>
