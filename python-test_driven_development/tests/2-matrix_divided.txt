@@ -1,0 +1,84 @@
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+>>> M1 = [[1, 2, 3], [4, 5, 6]]
+>>> M2 = []
+>>> M3 = [4]
+>>> M4 = [1, 2, 3]
+>>> M5 = [[1], [2], [3]]
+>>> M6 = [[1, 2], [3, 4, 5]]
+>>> M7 = 51
+>>> M8 = [[5, 10], [15, "vin"]]
+>>> M9 = [[]]
+>>> M10 = [[10, 20], [1e500, 500]]
+>>> M11 = [[2.5, 5], [5, 7.5]]
+>>> M12 = [[2, -2], [7, -5]]
+
+>>> matrix_divided(M1, 3)
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+>>> matrix_divided(M2, 2)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix_divided(M3, 2)
+[2.0]
+
+>>> matrix_divided(M4, 3)
+[0.33, 0.67, 1.0]
+
+>>> matrix_divided(M5, 3)
+[[0.33], [0.67], [1.0]]
+
+>>> matrix_divided(M6, 2)
+Traceback (most recent call last):
+...
+TypeError: Each row of the matrix must have the same size
+
+>>> matrix_divided(M7, 3)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix_divided(M8, 5)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+matrix_divided(M9, 5)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+matrix_divided(M10, 10)
+>>> add_integer(1e500, 1)
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+
+matrix_divided(M11, 2)
+[[1.25, 2.5], [2.5, 3.75]]
+
+matrix_divided(M12, 2)
+[[1, -1], [3.5, -2.5]]
+
+matrix_divided(M1, 0)
+Traceback (most recent call last):
+...
+ZeroDivisionError: division by zero
+
+matrix_divided(M1, -2)
+[[-0.5, -1.0, -1.5], [-2.0, -2.5, -3.0]]
+
+matrix_divided(M1, 0.5)
+[[2.0, 4.0, 6.0], [8.0, 10.0, 12.0]]
+
+matrix_divided(M1, "jojo")
+Traceback (most recent call last):
+...
+TypeError: div must be a number
+
+matrix_divided(M1, 1e-500)
+Traceback (most recent call last):
+...
+ZeroDivisionError: division by zero
