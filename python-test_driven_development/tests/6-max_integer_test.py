@@ -16,10 +16,18 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_type(self):
         # Etre sur que les TypeError sont relevées quand necessaire
-        self.assertRaises(TypeError, max_integer, ["a", 50])
-        self.assertRaises(TypeError, max_integer, None)
-        self.assertRaises(TypeError, max_integer, 92)
-        self.assertRaises(TypeError, max_integer, (32, 85, 120))
+        # (Mycode) self.assertRaises(TypeError, max_integer, ["a", 50])
+        with self.assertRaises(TypeError):
+            max_integer([1, "2", 3])
+        # (Mycode) self.assertRaises(TypeError, max_integer, None)
+        with self.assertRaises(TypeError):
+            max_integer(None)
+        # (Mycode) self.assertRaises(TypeError, max_integer, 92)
+        with self.assertRaises(TypeError):
+            max_integer(92)
+        # (Mycode) self.assertRaises(TypeError, max_integer, (32, 85, 120))
+        with self.assertRaises(TypeError):
+            max_integer((32, 85, 120))
 
     def test_maxint(self):
         # Etre sur que la Fonction renvoie la bonne valeur
