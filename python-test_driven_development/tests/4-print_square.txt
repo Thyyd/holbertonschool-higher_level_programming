@@ -6,7 +6,7 @@
 ###
 
 >>> print_square(0)
-# Pour size = 0 il faut afficher une ligne vide.
+
 
 >>> print_square(2.5)
 Traceback (most recent call last):
