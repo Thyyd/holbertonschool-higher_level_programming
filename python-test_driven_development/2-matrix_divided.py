@@ -46,7 +46,7 @@ def matrix_divided(matrix, div):
             if not isinstance(val, (int, float)):
                 raise TypeError(
                     "matrix must be a matrix (list of lists) of"
-                    "integers/floats")
+                    " integers/floats")
 
     list_size = len(matrix[0])  # Variable contenant la taille de la ligne 0
     # Verification que toutes les lignes de matrix font la meme taille
