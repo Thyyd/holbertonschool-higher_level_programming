@@ -3,7 +3,7 @@
 >>> text_indentation("Bon. text ?ok:Il faut tout casser")
 Bon.
 
- text ?
+text ?
 
 ok:
 
@@ -37,7 +37,7 @@ Salut.
 >>> text_indentation(". Salut ?")
 .
 
- Salut ?
+Salut ?
 
 
 >>> text_indentation("COMMENT CA ?? Tu vas soufrir...")
@@ -45,7 +45,7 @@ COMMENT CA ?
 
 ?
 
- Tu vas soufrir.
+Tu vas soufrir.
 
 .
 

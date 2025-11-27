@@ -25,7 +25,7 @@ def text_indentation(text):
     for i in text:
         a_afficher += i
         if i == "." or i == "?" or i == ":":
-            print(a_afficher)
+            print(a_afficher.strip())
             print("")
             a_afficher = ""
     print(a_afficher, end="")
