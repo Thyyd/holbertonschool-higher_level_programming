@@ -1,10 +1,10 @@
 say_my_name = __import__('3-say_my_name').say_my_name
 
 >>> say_my_name("Ciel", "Hakuyoku")
-'My name is Ciel Hakuyoku'
+My name is Ciel Hakuyoku
 
 >>> say_my_name("Albaz")
-'My name is Albaz '
+My name is Albaz 
 
 >>> say_my_name(None)
 Traceback (most recent call last):
@@ -27,7 +27,7 @@ Traceback (most recent call last):
 TypeError: last_name must be a string
 
 >>> say_my_name("")
-'My name is  '
+My name is  
 
 >>> say_my_name(["Jin"])
 Traceback (most recent call last):

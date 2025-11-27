@@ -27,4 +27,5 @@ def say_my_name(first_name, last_name=""):
         raise TypeError("last_name must be a string")
 
     phrase = "My name is {} {}".format(first_name, last_name)
+    print(phrase)
     return phrase
